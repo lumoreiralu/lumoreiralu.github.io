@@ -1,0 +1,497 @@
+/*Fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #320083;
+
+  font-family: 'Inter', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 30px;
+}
+
+
+
+
+/*Panel Principal*/
+
+.game-panel {
+  position: relative;
+
+  width: min(900px, 100%);
+
+  min-height: 650px;
+
+  padding: 35px 55px 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 27, 50, 0.97),
+      rgba(11, 13, 26, 0.98)
+    );
+
+  border: 1px solid rgba(132, 100, 255, 0.45);
+
+}
+
+
+
+/*Header*/
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 2px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #8d91aa;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #35ff9a;
+
+  box-shadow: 0 0 10px #35ff9a;
+}
+
+.edition {
+  color: #6d718b;
+}
+
+
+/*Conetenido*/
+
+.content {
+  text-align: center;
+
+  padding: 50px 0 35px;
+}
+
+
+
+/*Titulo*/
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: clamp(3rem, 7vw, 5rem);
+
+  font-weight: 900;
+
+  line-height: 0.95;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #FFF1CA;
+
+  text-shadow:
+    0 0 15px rgba(124, 92, 255, 0.4);
+}
+
+.title span {
+  display: block;
+
+  color: #C68A00;
+
+  font-size: 0.58em;
+
+  margin-top: 12px;
+
+  letter-spacing: 6px;
+
+  text-shadow:
+    0 0 10px rgba(128, 108, 255, 0.6);
+}
+
+
+/* Línea debajo del título */
+
+.title-line {
+  width: 180px;
+  height: 2px;
+
+  margin: 22px auto;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #806cff,
+    #00e5ff,
+    transparent
+  );
+
+  box-shadow: 0 0 10px rgba(128, 108, 255, 0.6);
+}
+
+
+/*Grupo*/
+
+.group {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-bottom: 32px;
+
+  border: 1px solid rgba(128, 108, 255, 0.45);
+
+  background: rgba(95, 74, 255, 0.08);
+
+  font-family: 'Orbitron', sans-serif;
+}
+
+.group-label {
+  padding: 8px 14px;
+
+  color: #858aa5;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 2px;
+
+  border-right: 1px solid rgba(128, 108, 255, 0.3);
+}
+
+.group-number {
+  padding: 8px 16px;
+
+  color: #00e5ff;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+}
+
+
+/*Integrantes*/
+
+.members {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 34px;
+}
+
+.member {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 18px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border-left: 2px solid #6252ff;
+}
+
+
+.member-name {
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 0.7rem;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: #C9FCFD;
+}
+
+
+/*Select Mode*/
+
+.select-mode {
+  margin-bottom: 15px;
+
+  color: #6f748e;
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 3px;
+}
+
+
+/*Botones*/
+
+.actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  width: 100%;
+}
+
+.btn {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  width: 300px;
+
+  min-height: 75px;
+
+  padding: 12px 18px;
+
+  text-decoration: none;
+
+  font-family: 'Orbitron', sans-serif;
+
+  background: #111426;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: white;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+
+
+
+
+/* Icono */
+
+.btn-icon {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 0.8rem;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* Contenido */
+
+.btn-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 4px;
+
+  flex: 1;
+}
+
+.btn-small {
+  font-size: 0.55rem;
+
+  letter-spacing: 2px;
+
+  color: #FDD874;
+}
+
+.btn-title {
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.btn-arrow {
+  font-size: 1.5rem;
+
+  color: #FDD874;
+
+  transition: transform 0.2s ease;
+}
+
+
+/*Boton editor*/
+
+.btn-editor {
+  border-color: #FDD874;
+}
+
+.btn-editor::before {
+  background: #FDD874;
+  box-shadow: 0 0 12px #FDD874;
+}
+
+.btn-editor .btn-icon {
+  color: #FDD874;
+
+  border: 1px solid #FDD874;
+}
+
+
+/* Boton presentación */
+
+.btn-presentacion {
+  border-color: #FDD874;
+}
+
+.btn-presentacion::before {
+  background: #FDD874;
+  box-shadow: 0 0 12px #FDD874;
+}
+
+.btn-presentacion .btn-icon {
+  color: #FDD874;
+
+  border: 1px solid #FDD874;
+}
+
+
+/*Hover*/
+
+.btn:hover {
+  transform: translateY(-4px);
+
+  background: #161a30;
+}
+
+.btn:hover::after {
+  left: 150%;
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+
+/* Editor */
+
+.btn-editor:hover {
+  border-color: #FDD874;
+
+  box-shadow:
+    0 0 25px rgba(255, 62, 112, 0.18),
+    inset 0 0 20px rgba(255, 62, 112, 0.04);
+}
+
+
+/* Presentación */
+
+.btn-presentacion:hover {
+  border-color: #FDD874;
+
+  box-shadow:
+    0 0 25px rgba(0, 229, 255, 0.18),
+    inset 0 0 20px rgba(0, 229, 255, 0.04);
+}
+
+
+/*Active*/
+
+.btn:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 15px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+  color: #4e536b;
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 0.55rem;
+
+  letter-spacing: 2px;
+}
+
+.footer-center {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.key {
+  padding: 4px 7px;
+
+  color: #858aa5;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  background: rgba(255, 255, 255, 0.03);
+}
