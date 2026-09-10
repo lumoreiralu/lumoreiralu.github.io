@@ -495,3 +495,15 @@ body {
 
   background: rgba(255, 255, 255, 0.03);
 }
+.link-sin-estilo {
+  text-decoration: none; 
+  color: inherit;        
+  cursor: pointer;       
+}
+
+.link-sin-estilo:visited,
+.link-sin-estilo:hover,
+.link-sin-estilo:active {
+  text-decoration: none;
+  color: inherit;
+}
